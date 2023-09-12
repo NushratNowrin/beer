@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 const Beer = (beer) => {
 	const { id, name, image_url } = beer;
@@ -11,7 +12,7 @@ const Beer = (beer) => {
 				<h2 className='font-semibold text-center text-white'>{name}</h2>
 			</div>
 			<div className='flex flex-col justify-end'>
-				<div className="shadowButton inline-block text-blue-200 text-sm font-semibold py-2 px-4 border border-blue-200  rounded-xl hover:text-black"><a href={`/${id}`} >View Details</a></div>
+				<div className="shadowButton inline-block text-blue-200 text-sm font-semibold py-2 px-4 border border-blue-200  rounded-xl hover:text-black"><Link to={`beer/${id}`} >View Details</Link></div>
 			</div>
 		</div>
 	);
