@@ -40,7 +40,7 @@ function App() {
 			</div>
 
 			{/* Cards */}
-			<div className='grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 justify-center items-center gap-10 sm:px-10 px-2'>
+			<div className='grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 justify-center items-center gap-10 sm:px-10 px-10'>
 				{beers
 					.filter((beer) => beer.name.toLowerCase().includes(query))
 					.map((beer) => (
